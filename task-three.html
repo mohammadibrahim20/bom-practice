@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="max-w-7xl w-100 mx-auto">
+  <p class="text-4xl font-bold">Please Contact Me</p>
+  <section class="flex justify-center mt-12">
+    <div class="form-control mt-5">
+      <p>Name: </p>
+      <div class="input-group">
+        <input id="name-input" value="js" type="text" placeholder="JS" class="input input-bordered"/>
+        <button id="set-name" class="btn btn-success">
+          Send Name
+        </button>
+        <button id="del-name" class="btn btn-active btn-secondary ">
+          Delete Name
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="flex justify-center ">
+    <div class="form-control mt-5">
+      <p>Email: </p>
+      <div class="input-group">
+        <input id="email-input" type="email" value="exampl@mail.com" placeholder="exampl@mail.com" class="input input-bordered"/>
+        <button id="set-email" class="btn btn-success">
+          Send Email
+        </button>
+        <button id="delete-email" class="btn btn-active btn-secondary ">
+          Delete Email
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="flex justify-center ">
+    <div class="form-control mt-5">
+      <p>Message: </p>
+      <div class="input-group">
+        <textarea name="message" id="message-input" cols="28" class="border" value="type"></textarea>
+        <button id="set-message" class="btn btn-success">
+          Send Message
+        </button>
+        <button id="del-message" class="btn btn-active btn-secondary ">
+          Delete Message
+        </button>
+      </div>
+    </div>
+  </section>
+  <div class="flex justify-center mt-5">
+    <button id="make" class="btn btn-primary">Make Object</button>
+    <button id="clear" class="btn btn-primary">Clear</button>
+  </div>
+  <script src="js/task.js"></script>
+</body>
+
+</html>
