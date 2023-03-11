@@ -16,8 +16,9 @@ const newdetails = JSON.stringify(details)
 // console.log(newdetails)
 localStorage.setItem('details', newdetails)
 const item = localStorage.getItem("details")
-console.log(item)
+const itemObject = JSON.parse(item)
+console.log(item, itemObject)
 
-localStorage.removeItem('name')
+/* localStorage.removeItem('name')
 localStorage.removeItem('age')
-localStorage.removeItem('details')
+localStorage.removeItem('details') */
